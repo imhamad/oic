@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* ---------------------------------index css------------------------- */
+
+nav {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    background-color: rgb(5, 5, 94);
+    overflow: hidden;
+
+}
+
+nav h4 {
+    text-transform: uppercase;
+    margin-top: -8px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+nav p {
+    color: #ffa500;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+nav p a {
+    color: orange;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+nav p a:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    margin-top: -15px;
+    font-size: 12px;
+}
+
+nav .nav-link {
+    color: white;
+    cursor: pointer;
+}
+
+nav .nav-link:hover {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+nav .nav-link a {
+    text-decoration: none;
+    color: #ffa500;
+}
+
+
+.logo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.logo .sub-logo {
+    margin-top: 20px;
+    margin-left: 600px;
+}
+
+.logo .sub-logo #bsc {
+    cursor: pointer;
+    border: none;
+}
+
+.logo .sub-logo #stats {
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.logo .sub-logo #add {
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.logo .sub-logo input[type="text"] {
+    width: 80px;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: rgb(255, 153, 0);
+}
+
+.logo .sub-logo input::placeholder {
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 500px;
+
+
+}
+
+.wrapper,
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    overflow: hidden;
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.slide .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide .main-1 {
+    color: white;
+    position: absolute;
+    top: 18%;
+    z-index: 100;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide .main-1 .box-1 {
+    margin-left: 160px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.slide .main-1 .box-1 h1 {
+    color: white;
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 45px;
+
+}
+
+
+.slide .main-1 .box-1 h2 {
+    color: rgb(255, 193, 7);
+    font-weight: bolder;
+    font-size: 45px;
+    overflow: hidden;
+}
+
+.slide .main-1 .box-1 p {
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.slide .main-1 .box-1 .btn {
+    width: 120px;
+    height: 45px;
+    background-color: blue;
+}
+
+.slide .main-1 .box-1 button {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 1px 15px;
+    text-decoration: underline;
+    margin-left: -4px;
+}
+
+.slide .main-1 .box-1 button:hover {
+    background: rgb(80, 88, 255);
+    transition: .5s;
+}
+
+.slide .main-1 .box-2 {
+    width: 250px;
+    height: 280px;
+    background-color: white;
+    margin-left: 200px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 30px;
+    overflow: hidden;
+
+
+}
+
+.slide .main-1 .box-2 h1 {
+    color: rgb(255, 153, 0);
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    margin-left: 2px;
+
+}
+
+.slide .main-1 .box-2 input[type="email"],
+.slide .main-1 .box-2 input[type="password"] {
+    border: 0;
+    background-color: rgb(204, 204, 204);
+    display: block;
+    margin: 10px auto;
+    border: 1px solid rgb(255, 153, 0);
+    padding: 10px 10px;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    color: rgb(6, 104, 191);
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.slide .main-1 .box-2 input::placeholder {
+    color: rgb(6, 104, 191);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.slide .main-1 .box-2 button {
+    border: 1px solid #e89907;
+    background-color: rgb(255, 153, 0);
+    color: black;
+    border-radius: 10px 7px 10px 7px;
+    padding: 3px 8px;
+    margin-left: 13px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.slide .main-1 .box-2 button:hover {
+    background-color: transparent;
+    color: black;
+    transition: .5s;
+}
+
+.slide .main-1 .box-2 a {
+    color: rgb(111, 10, 161);
+    margin-left: 13px;
+    margin-top: -50px;
+}
+
+.nav-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.nav-btn::before,
+.nav-btn::after {
+    font-size: 12px;
+    color: #fff;
+}
+
+/* ----------------------------------page1 css------------------------------------*/
+
+.page-1 {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(248, 249, 250);
+}
+
+.table-1 {
+    width: 99%;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.table-1 table {
+    border-collapse: collapse;
+    width: 100%;
+    border: .5px solid rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
+}
+
+.table-1 th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table-1 td {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.table-1 table tr {
+    line-height: 15px;
+}
+
+
+.table-1 table tr td p {
+    font-size: 10px;
+    opacity: .4;
+
+}
+
+.table-1 table tr td button {
+    padding: 12px 8px;
+    background-color: rgb(108, 117, 125);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+.contont {
+    width: 97.58%;
+    height: 470px;
+    background-color: rgb(248, 249, 250);
+    margin-top: -11px;
+    margin-left: 20px;
+    display: flex;
+    overflow: hidden;
+    border: .5px solid rgb(230, 230, 230);
+}
+
+
+.content .content-1 {
+    width: 50%;
+}
+
+.contont .content-1 h3 {
+    margin-top: 50px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.contont .content-1 p {
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+.contont .content-1 h4 {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.contont .content-1 p1 {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.contont .content-1 p1 span {
+    color: rgb(101, 101, 219);
+}
+
+.table-2 {
+    width: 50%;
+    height: 331px;
+    border: .5px solid rgb(230, 230, 230);
+    margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.table-2 table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 200px;
+}
+
+.table-2 table tr {
+    border-bottom: .5px solid #d3cfcf;
+
+}
+
+.table-2 table tr th {
+    padding: 15px;
+    text-align: left;
+}
+
+.table-2 table tr td {
+    text-align: right;
+    padding-right: 12px;
+    font-weight: bold;
+}
+
+
+.table-3 {
+    width: 99.2%;
+    margin-left: 10px;
+    margin-top: -50px;
+    padding: 10px;
+    background-color: white;
+}
+
+.table-3 table {
+    border-collapse: collapse;
+    width: 100%;
+    border: .5px solid rgb(230, 230, 230);
+    padding: 10px;
+}
+
+.table-3 table tr {
+    border-bottom: 1px solid #ddd;
+    margin-left: 50px;
+}
+
+.table-3 table tr {
+    line-height: 15px;
+}
+
+.table-3 table tr th {
+    font-weight: bold;
+}
+
+.table-3 table tr td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.table-3 table tr td p {
+    opacity: .4;
+    font-size: 10px;
+
+}
+
+.table-3 table tr td button {
+    padding: 12px 8px;
+    background-color: rgb(108, 117, 125);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* ---------------------------------------page2 css--------------------------------------*/
+
+
+.content-2 {
+    background-color: rgb(248, 249, 250);
+    width: 100%;
+    height: 500px;
+}
+
+.content-2 .cont {
+    background-color: white;
+    width: 97.8%;
+    height: 180px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.content-2 .cont .main-2 {
+    width: 98.5%;
+    margin-left: 10px;
+    border: .5px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.content-2 .cont .main-2 .sub-main-1 {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.content-2 .cont .main-2 .sub-main-1 h3 {
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.content-2 .cont .main-2 .sub-main-1 button {
+    height: 30px;
+    background-color: rgb(10, 36, 123);
+    border: .5px solid rgb(10, 36, 123);
+    color: white;
+    margin-top: 20px;
+    margin-right: 12px;
+    padding: 0px 10px;
+    overflow: hidden;
+    border-radius: 10px 8px 10px 8px;
+
+}
+
+
+.main-2 .sub-main-2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 249, 250);
+}
+
+.main-2 .sub-main-2 h4 {
+    color: rgb(255, 102, 0);
+    margin-left: 200px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.main-2 .sub-main-2 h5 {
+    margin-top: 10px;
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.table-4 {
+    width: 99%;
+    margin-left: 10px;
+    margin-top: -300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.table-4 table {
+    border-collapse: collapse;
+    width: 100%;
+    border: .5px solid rgb(230, 230, 230);
+    padding: 10px;
+}
+
+.table-4 table tr {
+    border-bottom: 1px solid #ddd;
+    margin-left: 50px;
+}
+
+.table-4 table tr:nth-child(1) {
+    height: 50px;
+}
+
+.table-4 table tr th {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.table-4 table tr td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.table-4 table tr td p {
+    opacity: .4;
+    font-size: 10px;
+
+}
+
+.table-4 table tr td button {
+    padding: 12px 8px;
+    background-color: rgb(108, 117, 125);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+/* ------------------------------------------- Footer  ----------------------------------------- */
+
+footer {
+    width: 99%;
+    height: 450px;
+    background-color: rgb(21, 30, 40);
+    margin-left: 5px;
+}
+
+footer .footer-1 {
+    display: flex;
+    height: 80px;
+}
+
+footer .footer-1 img {
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+footer .footer-1 .sub {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer .footer-1 .sub h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+    word-spacing: 3px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+footer .footer-1 .sub input[type="email"] {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+footer .footer-1 .sub p {
+    color: white;
+    padding-top: 7px;
+    padding-left: 4px;
+    background-color: blueviolet;
+    height: 50px;
+    width: 40px;
+    border: none;
+    border-radius: 0px 4px 10px 0px;
+    margin-top: -0.2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer .footer-2 {
+    margin-left: 50px;
+    margin-top: 20px;
+
+    .column {
+        float: left;
+        padding: 10px;
+        height: 250px;
+
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .middel {
+        width: 15%;
+    }
+
+    .middel-2 {
+        width: 20%;
+    }
+
+    .right {
+        width: 15%;
+    }
+
+
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+footer .footer-2 .left p {
+    font-size: 15px;
+    color: rgb(138, 139, 138);
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+footer .footer-2 ul li {
+    list-style: none;
+    line-height: 25px;
+
+}
+
+footer .footer-2 ul li a {
+    text-decoration: none;
+    color: rgb(138, 139, 138);
+}
+
+footer .footer-2 .bi {
+    color: rgb(138, 139, 138);
+    margin-right: 5px;
+}
+
+footer .footer-3 {
+    display: flex;
+    margin-top: -70px;
+}
+
+footer .footer-3 h3 {
+    font-size: 15px;
+    color: rgb(138, 139, 138);
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+footer .footer-3 a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgb(138, 139, 138);
+
+}
+
+footer .footer-3 .bi {
+    color: rgb(138, 139, 138);
+    margin-right: 10px;
+}
+
+footer .footer-4 {
+    display: flex;
+    margin-top: 50px;
+}
+
+footer .footer-4 p {
+    color: rgb(138, 139, 138);
+    margin-left: 50px;
+}
+
+footer .footer-4 p2 {
+    color: rgb(138, 139, 138);
+    margin-left: 520px;
+}

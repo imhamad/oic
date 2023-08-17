@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body style="overflow-x:hidden;">
+    <!-- --------------------------------index html---------------------------- -->
+
+    <nav class="navbar sticky-top">
+        <h4>Boredereau de suivi des cargaisons</h4>
+        <p>Support : <a href="#">+225 01 01 01 01 01</a></p>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">A Propos<i class="bi bi-caret-down-fill"
+                        style="margin-left: 2px; color: orange;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">F.A.Q<i class="bi bi-caret-down-fill"
+                        style="margin-left: 2px; color: orange;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">S'inscire</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Langues<i class="bi bi-caret-down-fill"
+                        style="margin-left: 2px; color: orange;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Connexion</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <img src="logo.jpg">
+        <div class="sub-logo">
+            <select id="bsc">
+                <option>BSC</option>
+                <option>Nouveau</option>
+                <option>En attent</option>
+                <option>Valides</option>
+            </select>
+
+            <select id="stats">
+                <option>STATISTIQUES</option>
+                <option>Economiques</option>
+                <option>Financieres</option>
+                <option>Divers</option>
+            </select>
+
+            <select id="add">
+                <option>ADMINISTRATION</option>
+                <option>Importateurs</option>
+                <option>Agents OIC</option>
+                <option>Exportateurs</option>
+                <option>Douanes</option>
+            </select>
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+
+
+
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="car.jpg" alt="" class="image">
+
+                <div class="main-1">
+                    <div class="box-1">
+                        <h1>Lowest Car Loan Rate</h1>
+                        <h2>9.60%</h2>
+                        <p>We provide an excellent service Loan company.Lorem ipsum,<br> sit amet consectetur
+                            adipisicing elit.
+                        </p>
+                        <div class="btn"><button type="submit">S'inscrire</button></div>
+                    </div>
+                    <div class="box-2">
+                        <h1>Se Connecter</h1>
+                        <input type="email" placeholder="Login" required>
+                        <input type="password" placeholder="password" required>
+                        <button type="submit">Se Connecter</button><br><br>
+                        <a href="#">Mot de passe oublie ?</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slide swiper-slide">
+                <img src="car.jpg" alt="" class="image">
+                <div class="main-1">
+                    <div class="box-1">
+                        <h1>Lowest Car Loan Rate</h1>
+                        <h2>9.60%</h2>
+                        <p>We provide an excellent service Loan company.Lorem ipsum,<br> sit amet consectetur
+                            adipisicing elit.
+                        </p>
+                        <div class="btn"><button type="submit">S'inscrire</button></div>
+                    </div>
+                    <div class="box-2">
+                        <h1>Se Connecter</h1>
+                        <input type="email" placeholder="Login" required>
+                        <input type="password" placeholder="password" required>
+                        <button type="submit">Se Connecter</button><br><br>
+                        <a href="#">Mot de passe oublie ?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="car.jpg" alt="" class="image">
+                <div class="main-1">
+                    <div class="box-1">
+                        <h1>Lowest Car Loan Rate</h1>
+                        <h2>9.60%</h2>
+                        <p>We provide an excellent service Loan company.Lorem ipsum,<br> sit amet consectetur
+                            adipisicing elit.
+                        </p>
+                        <div class="btn"><button type="submit">S'inscrire</button></div>
+                    </div>
+                    <div class="box-2">
+                        <h1>Se Connecter</h1>
+                        <input type="email" placeholder="Login" required>
+                        <input type="password" placeholder="password" required>
+                        <button type="submit">Se Connecter</button><br><br>
+                        <a href="#">Mot de passe oublie ?</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- ----------------------------------page1 html----------------------------------------- -->
+    <div class="page-1">
+        <div class="table-1">
+            <table>
+                <tr>
+                    <th>Lender</th>
+                    <th>Fiexd APR</th>
+                    <th>Variable APR</th>
+                    <th>Terms(years)</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="logo-1.png" style="width: 50px; height: 40px;"> </td>
+                    <td>3.35% - 7.76%<p>Fiexd APR</p>
+                    </td>
+                    <td>2.65% - 5.67%<p>Variable APR</p>
+                    </td>
+                    <td>5,235,56,63<p>Terms(Years)</p>
+                    </td>
+                    <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                            Details</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="contont">
+            <div class="content-1">
+                <h3>What we like</h3>
+
+                <p><i class="bi bi-check-circle-fill" style="margin-right: 10px; color: green;"></i>Lorem ipsum dolor
+                    sit amet
+                    consectetu adipisicing elit. Autem,<br>et vel</p>
+
+                <p><i class="bi bi-check-circle-fill" style="margin-right: 10px; color: green;"></i>Lorem ipsum dolor
+                    sit amet
+                    consectetur adipisicing elit. Autem, <br>et vel amet consectetur adipisicin</p>
+                <p><i class="bi bi-check-circle-fill" style="margin-right: 10px; color: green;"></i>Lorem ipsum dolor
+                    sit amet
+                    consectetur adipisicing e <br>et vel ametconsectetur adipisicin</p>
+                <p><i class="bi bi-check-circle-fill" style="margin-right: 10px; color: green;"></i>Lorem ipsum dolor
+                    sit amet
+                    consectetur adipi expedita hic <br>et vel</p>
+                <p><i class="bi bi-check-circle-fill" style="margin-right: 10px; color: green;"></i>Lorem ipsum dolor
+                    sit amet
+                    consectetur adipisicing elit. Autem</p>
+
+                <h4>Additional Information</h4>
+                <p1>See personal <span>review</span> and <span>important disclosoures.</span></p1>
+            </div>
+
+            <div class="table-2">
+                <table>
+                    <tr>
+                        <th>Loan Mininmum</th>
+                        <td>$5000</td>
+                    </tr>
+                    <tr>
+                        <th>Loan Maximum</th>
+                        <td>No Max</td>
+                    </tr>
+                    <tr>
+                        <th>Eligible Degrees</th>
+                        <td>Undergratuade & Graduate</td>
+                    </tr>
+                    <tr>
+                        <th>Eligible Loans</th>
+                        <td>Private & Federal</td>
+                    </tr>
+                    <tr>
+                        <th>Min Annual Income</th>
+                        <td>No Minimum</td>
+                    </tr>
+                    <tr>
+                        <th>Min Cridet Score</th>
+                        <td>Good or Excellent</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="table-3">
+        <table>
+            <tr>
+                <td>
+                    <img src="logo-2.png" style="width: 100px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-3.png" style="width: 50px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-4.png" style="width: 100px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-5.png" style="width: 100px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-1.png" style="width: 50px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!----------------------------------- page2 html---------------------------------------- -->
+
+    <div class="content-2">
+        <div class="cont">
+            <div class="main-2">
+                <div class="sub-main-1">
+                    <h3>BSC Valides</h3>
+                    <button type="button">Nouveau BSC</button>
+                </div>
+
+                <div class="sub-main-2">
+                    <h4>1 568 BSC Valides</h4>
+                    <h5>800 BSC en attente de traitement</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-4">
+        <table>
+            <tr>
+                <th>Lender</th>
+                <th>Fiexd APR</th>
+                <th>Variable APR</th>
+                <th>Terms(years)</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-1.png" style="width: 50px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-2.png" style="width: 100px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-3.png" style="width: 50px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-4.png" style="width: 100px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-5.png" style="width: 100px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="logo-1.png" style="width: 50px; height: 40px;">
+                </td>
+                <td>3.35% - 7.76%<p>Fiexd APR</p>
+                </td>
+                <td>2.65% - 5.67%<p>Variable APR</p>
+                </td>
+                <td>5,235,56,63<p>Terms(Years)</p>
+                </td>
+                <td><button type="submit">Check Rate</button><br><br><a href="#" style="font-size: 13px;">Expand
+                        Details</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- ------------------------------------------ Footer ---------------------------------------------->
+
+
+    <footer>
+        <div class="footer-1">
+            <img src="logo.jpg">
+
+            <div class="sub">
+                <h2>Signup Our Newsletter</h2>
+                <input type="email" placeholder="Write email address">
+                <p>GO!</p>
+            </div>
+        </div>
+
+        <hr style="color: rgb(187, 190, 192); width: 89%; margin-left: 50px; margin-top: 30px;">
+
+        <div class="footer-2">
+            <div class="row">
+                <div class="column left" style="margin-left: 2px;">
+                    <p>Our goal Att Borrow Loan Company is to provide access to persnal loans and education loan,
+                        car
+                        loan, home loan at insight competitive interest rates lorem ipsums. We are the provider, you
+                        can
+                        use our loan product.</p>
+                </div>
+                <div class="column middel" style="margin-left: 10px; font-size: 13px;">
+                    <ul>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Home</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Services</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">About Us</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">News</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Faq</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div class="column middel-2" style=" margin-left: px; font-size: 13px;">
+                    <ul>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Car Loan</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Personal Loan</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Educational Loan</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Business Loan</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Home Loan</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i><a href="#">Debt Consolidation</a></li>
+                    </ul>
+
+                </div>
+                <div class="column right" style=" margin-left: -12px; font-size: 13px;">
+                    <ul>
+                        <li><i class="bi bi-facebook"></i><a href="#">Facebook</a></li>
+                        <li><i class="bi bi-google"></i><a href="#">Google</a></li>
+                        <li><i class="bi bi-twitter"></i><a href="#">Twitter</a></li>
+                        <li><i class="bi bi-linkedin"></i><a href="#">Linked In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-3">
+            <h3><i class="bi bi-geo-alt-fill"></i>3895 Sycamore Road<br> Arlington, 97812</h3>
+            <a href="#"><i class="bi bi-telephone-fill"></i>800-123-456</a>
+        </div>
+
+        <div class="footer-4">
+            <p>@ Copyright 2023 | Borrow Loan Company</p>
+            <p2>Terms of use | Privacy Policy</p2>
+        </div>
+    </footer>
+
+    <!-- ------------------------------------Index swiper Script ---------------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
