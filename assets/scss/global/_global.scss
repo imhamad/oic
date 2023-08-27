@@ -6,14 +6,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: floralwhite;
+body {
+  background-color: white;
   display: flex;
   display: table;
   display: grid;
   display: block;
 }
 
-
-
-
+.container {
+  max-width: 95% !important;
+}
