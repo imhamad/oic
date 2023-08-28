@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <!--    Viewport compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--  Prevent Zooming out on Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--    Bootstrap with CDN for fast loading -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+
+    <!-- fontawesome cdn -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+    <!--  Compiled CSS -->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--    Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <title>Form</title>
+</head>
+<body>
+
+<div class="container">
+    <h3 class="title text-dark pt-4 ml-0 ml-n2">
+        BORDEREAU DE SUIVI DES CARGAISONS
+    </h3>
+</div>
+<div class="container mt-4 bg-white border p-2">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-2 mb-2 ml-2">
+            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="#">BSC</a></li>
+            <li class="breadcrumb-item active" aria-current="page">DETAILS SUR L'EXPEDITION</li>
+        </ol>
+    </nav>
+</div>
+<div class="container mt-4">
+    <form type="" class="devise-form--bootstrap">
+        <div class="row pt-2 pb-2">
+            <div class="col">
+                <label for="exportateur-acheteur">Exportateur ou Acheteur | Nouveau</label>
+                <select class="form-select" id="exportateur-acheteur">
+                    <option selected>choisir</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+        </div>
+        <div class="row pt-2 pb-2">
+            <div class="col">
+                <label for="num-connaissement">Numéro de connaissement</label>
+                <input type="text" class="form-control" id="num-connaissement">
+            </div>
+            <div class="col">
+                <label for="pays-chargement">Pays de chargement</label>
+                <select class="form-select" id="pays-chargement">
+                    <option selected>choisir</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+        </div>
+        <div class="row pt-2 pb-2">
+            <div class="col">
+                <label for="select1">Devise</label>
+                <select class="form-select" id="select1">
+                    <option selected>choisir</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="select2">Condition international de vente</label>
+                <select class="form-select" id="select2">
+                    <option selected>choisir</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+        </div>
+        <div class="row pt-2 pb-2">
+            <div class="col">
+                <label for="cat-marchandise">Catégorie de Marchandise</label>
+                <input type="text" class="form-control" id="cat-marchandise">
+            </div>
+            <div class="col">
+                <label for="mode-conditionnement">Mode de Conditionnement</label>
+                <input type="text" class="form-control" id="mode-conditionnement">
+            </div>
+        </div>
+        <div class="row pt-2 pb-2">
+            <div class="col">
+                <button type="submit" class="btn btn-warning">Soumettre</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Bootstap Javascript, JQuery and Popper -->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+></script>
+
+<!--Main JavaScript -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

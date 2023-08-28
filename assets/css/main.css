@@ -197,3 +197,7 @@ body {
         .table-upper-section .footer h2 {
           color: #ff9900;
           font-size: 22px; } }
+
+form label {
+  font-weight: bold;
+  color: #000; }
